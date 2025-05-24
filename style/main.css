@@ -9,7 +9,7 @@
 
 
 .container {
-    max-width: 1715px;
+    max-width: 1600px;
     height: 100%;
 }
 
@@ -36,6 +36,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     height: 815px;
+    width: 100%;
 
 }
 
@@ -124,6 +125,7 @@ header {}
     line-height: 150%;
     font-weight: 400;
     font-size: 18px;
+    color: var(--main-text-color);
 }
 
 .main__left__content button {
@@ -145,4 +147,14 @@ header {}
     left: 200px;
 }
 
-.main__right__content:last-of-type {}
+.main__right__content img:last-of-type {
+    position: absolute;
+    right: 541px;
+    top: 149px;
+}
+
+.main__right__content img:first-of-type {
+    position: absolute;
+    right: 174px;
+    top: 25px;
+}
