@@ -1,0 +1,148 @@
+@import url(normalise.css);
+@import url(helpers.css);
+
+:root {
+    --main-text-color: #8794BA;
+    --main-heading-color: #172755;
+}
+
+
+
+.container {
+    max-width: 1715px;
+    height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Roboto", sans-serif;
+}
+
+.header-part {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+
+
+main {
+    background-image: url(../assets/images/background-top.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 815px;
+
+}
+
+header {}
+
+.logo-nd-name {
+    display: flex;
+    position: relative;
+    left: 210px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    gap: 12px;
+
+}
+
+.nav-section {
+    position: relative;
+    margin: auto;
+    margin-right: 36px;
+}
+
+.nav-section a {
+    margin-right: 36px;
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav-section a:last-of-type {
+    margin-right: 314px;
+}
+
+
+
+.sign-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 209px;
+    gap: 40px;
+    align-items: center;
+}
+
+.sign-section a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 16px;
+}
+
+.sign-section button {
+
+    background-color: transparent;
+    color: #aab2d5;
+    border: 1px solid #aab2d5;
+    padding: 10px 30px;
+    border-radius: 68px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* MAIN Part */
+
+
+.main__left__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    max-width: 550px;
+    color: #fff;
+    margin-left: 210px;
+    margin-top: 49px;
+}
+
+.main__left__content h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+
+}
+
+.main__left__content p {
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.main__left__content button {
+    background-color: #EF2A82;
+    border: none;
+    color: #fff;
+    margin: 49px auto auto 0px;
+    width: 238px;
+    height: 50px;
+    border-radius: 68px;
+}
+
+
+.main__right__content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    left: 200px;
+}
+
+.main__right__content:last-of-type {}
