@@ -39,17 +39,23 @@ p {
 
 
 
-main {
-    background-image: url(../assets/images/background-top.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 815px;
-    width: 100%;
 
-}
 
 header {}
+
+.first-page {
+    background-image: url(../assets/images/background-top.png);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: -1;
+    pointer-events: none;
+    /* чтобы не перекрывал клики */
+}
 
 .logo-nd-name {
     display: flex;
@@ -140,7 +146,7 @@ header {}
     color: var(--main-text-color);
 }
 
-.main__left__content button {
+.main__left button {
     background-color: #EF2A82;
     border: none;
     color: #fff;
@@ -148,6 +154,12 @@ header {}
     width: 238px;
     height: 50px;
     border-radius: 68px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.main__left button:hover {
+    transform: scale(1.1);
 }
 
 
@@ -223,7 +235,7 @@ header {
 
 
 
-.header__action a,
+
 .header__action button {
     color: var(--main-text-color);
     text-decoration: none;
@@ -237,8 +249,13 @@ header {
 }
 
 .header__action a {
-    transform: scale(1.1);
+    color: var(--main-text-color);
+    text-decoration: none;
+    transition: all .4s ease;
+}
 
+.header__action a:hover {
+    transform: scale(1.1);
 
 
 }
@@ -452,7 +469,14 @@ header {
     border-radius: 68px;
     border: 1px ridge #353e58;
     margin: auto;
+    transition: all .4s ease;
 }
+
+.footer-price-plan-item button:hover {
+    transform: scale(1.1);
+}
+
+
 
 .footer-price-plan-item:first-of-type {
     background-color: #2A407C;
@@ -530,4 +554,18 @@ header {
     justify-content: flex-end;
     align-items: center;
     gap: 40px;
+}
+
+.footer__bg {
+    background-image: url(../assets/images/footer-bg.png);
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom;
+    z-index: -1;
+    pointer-events: none;
 }
