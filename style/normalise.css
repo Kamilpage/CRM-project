@@ -24,7 +24,8 @@ html {
 
 body {
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /**
@@ -384,4 +385,10 @@ h2 {
     font-weight: 700;
     font-size: 50px;
     line-height: 120%;
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
 }
